@@ -1,4 +1,4 @@
-<script>
+<script >
   export default {
     // OPTIONS API 
     // localhost:5000/data => req.body => {count:0, fname:"Arjun"}
