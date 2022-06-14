@@ -8,6 +8,9 @@ export default{
         markComplete(){
             this.todo.status = !this.todo.status
         },
+        deleteTodo(){
+            this.$emit('todos-delete-todo',this.todo.id)
+        }
     }
 }
 </script>
@@ -19,7 +22,7 @@ export default{
         <p>{{todo.description}}</p>
         <p>{{todo.status}}</p>
         <!--Emitting Event-->
-        <button @click="$emit('todos-delete-todo',todo.id)">Delete Todo</button>
+        <button v-on:click="deleteTodo">Delete Todo</button>
     </div>
 </template>
 

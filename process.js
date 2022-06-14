@@ -29,3 +29,22 @@
 // 9. App.vue
 //     1. V-on:add-Todo = “addTodo”
 //     2. Methods:addTodo(){this.todos = […this.todos, newObj]}
+// 10. Update Todo
+//     1. V-on-click => data  with event emissions
+//     2. V-bind-class  => conditional styling
+//     3. Updates this.todo.status != this.todo.status
+// 11. Delete Todo
+//     1. Nested Component
+//         1. Todo => todoId => v-on => emitted the event onClick
+//         2. Todos => todoId => v-on => emitted without event 
+//         3. App => todoId => filtered  => Array.filter()
+
+
+
+// APP => id and trying to filter the whole state which is containing your todos:[]
+//  => Todos app-delete-todo: 1
+// 		=> Todo => todos-delete-do : 1
+
+// Two Way Binding
+// App => todos => Todos.vue => todos => Todo.vue
+// Todo.vue => todoId => Todos.vue => todoId => App.vue => filter

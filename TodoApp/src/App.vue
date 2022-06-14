@@ -5,7 +5,8 @@
     <!--Child Component Todo is binded with the data in App Component-->
     <Todos  v-bind:todos="todos" v-on:app-delete-todo="deleteTodo" />
     <AddTodo v-on:add-todo="addTodo" />
-    
+  
+   
   </div>
 </template>
 

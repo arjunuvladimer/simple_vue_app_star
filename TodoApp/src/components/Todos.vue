@@ -9,11 +9,7 @@ export default{
     props:[
         "todos"
     ],
-    methods:{
-        deleteTodo(){
-           todo.id
-        }
-    }
+   
 }
 </script>
 <template>
