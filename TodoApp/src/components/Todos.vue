@@ -8,7 +8,12 @@ export default{
     },
     props:[
         "todos"
-    ]
+    ],
+    methods:{
+        deleteTodo(){
+           todo.id
+        }
+    }
 }
 </script>
 <template>
@@ -16,7 +21,13 @@ export default{
         <h1>TODO LIST</h1>
         <ul>
             <li v-bind:key="todo.id" v-for="todo in todos">
-                <Todo v-bind:todo="todo" />
+                <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',todo.id)" v-bind:todo="todo" />
+                
+                <!--
+                    <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',1)" v-bind:todo="todo" />
+                    <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',2)" v-bind:todo="todo" />
+                    <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',3)" v-bind:todo="todo" />
+                -->
             </li>
             <!--
             <li key="1">
