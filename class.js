@@ -61,8 +61,8 @@ function submit(event){
 
 // Rest and Spread Operator
 var todos = [{id:1,name:"ES6", status:false},{id:1,name:"VUE", status:false}]
-function add(todos){
-    console.log(...todos)
+function add(...a){
+    console.log(...a)
 }
 
-add(todos)
+add(1,23,45,5)

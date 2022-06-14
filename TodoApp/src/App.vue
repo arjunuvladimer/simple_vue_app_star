@@ -35,6 +35,7 @@ export default {
     <!--Child Component Todo is binded with the data in App Component-->
     <Todos v-bind:todos="todos" />
     <AddTodo v-on:add-todo="addTodo" />
+    
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <script>
 import { v4 as uuidv4 } from 'uuid';
+
 export default{
     name:'AddTodo',
     data(){
@@ -17,10 +18,13 @@ export default{
                 description: this.description,
                 status:false
             }
-            // sending it
-            // emitting it
+
+            // sending newTodoObj to add-todo v-on
+            // emitting event using $emit
             this.$emit('add-todo',newTodoObj)
+
             this.title=""
+            this.description=""
         }
     }
 }
