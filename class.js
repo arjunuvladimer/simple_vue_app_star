@@ -30,6 +30,39 @@ var todos= [
     }
 ]
 
-for(todo in todos){
-    console.log(todos[todo])
+// for(todo in todos){
+//     console.log(todos[todo])
+// }
+
+
+var title = "Some Title"
+
+function submit(event){
+    function addTodo(event){
+        event.target.value
+    }
 }
+
+// event.target: {
+//     // attributes of your form elements
+//     name,
+//     value,
+//     type,
+
+// }
+
+
+// function add-todo($emit){
+//     function addTodo($emit){
+//         return $emit = "arjun"
+//     }
+//     return $emit
+// }
+
+// Rest and Spread Operator
+var todos = [{id:1,name:"ES6", status:false},{id:1,name:"VUE", status:false}]
+function add(todos){
+    console.log(...todos)
+}
+
+add(todos)

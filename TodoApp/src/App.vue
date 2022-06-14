@@ -1,35 +1,30 @@
 <script >
 import Todos from './components/Todos.vue'
+import AddTodo from './components/AddTodo.vue'
 
-export default{
-  name:'app',
-  components:{
-    Todos
+export default {
+  name: 'app',
+  components: {
+    Todos,
+    AddTodo
   },
-  data(){
+  data() {
     return {
       todos: [
         {
-          id:1,
-          name: "ES6 Classes",
+          id: 1,
+          title: "ES6 Classes",
+          description:'Modern Javascript',
           status: false
         },
-        {
-          id:2,
-          name: "Node Classes",
-          status: false
-        },
-        {
-          id:3,
-          name: "TypeScript Classes",
-          status: false
-        },
-        {
-          id:4,
-          name: "Vue Classes",
-          status: false
-        }
+        
       ]
+    }
+  },
+  methods:{
+    addTodo(newTodoObj){
+      // Combining old ones with the new one
+      this.todos = [ ...this.todos, newTodoObj]
     }
   }
 }
@@ -38,10 +33,10 @@ export default{
 <template>
   <div id="app">
     <!--Child Component Todo is binded with the data in App Component-->
-    <Todos v-bind:todos="todos"/>
+    <Todos v-bind:todos="todos" />
+    <AddTodo v-on:add-todo="addTodo" />
   </div>
 </template>
 
 <style>
-
 </style>

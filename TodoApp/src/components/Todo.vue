@@ -9,7 +9,8 @@ export default{
 
 <template>
     <div>
-        <p>{{todo.name}}</p>
+        <p>{{todo.title}}</p>
+        <p>{{todo.description}}</p>
         <p>{{todo.status}}</p>
     </div>
 </template>

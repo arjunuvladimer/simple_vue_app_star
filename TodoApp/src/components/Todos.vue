@@ -18,6 +18,14 @@ export default{
             <li v-bind:key="todo.id" v-for="todo in todos">
                 <Todo v-bind:todo="todo" />
             </li>
+            <!--
+            <li key="1">
+                <Todo todo="{id:1, name: 'ES6', status:false}" />
+            </li>
+            <li key="2">
+                <Todo todo="{id:2, name: 'Vue', status:false}" />
+            </li>
+            -->
         </ul>
     </div>
 </template>
