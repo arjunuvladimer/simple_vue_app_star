@@ -5,9 +5,7 @@
     <!--Child Component Todo is binded with the data in App Component-->
     <Todos  v-bind:todos="todos" v-on:app-delete-todo="deleteTodo" />
     <AddTodo v-on:add-todo="addTodo" />
-  
-   
-  </div>
+   </div>
 </template>
 
 <script >
@@ -20,7 +18,7 @@ export default {
     Todos,
     AddTodo
   },
-  data() {
+  data() { // Initial State
     return {
       todos: [
         {

@@ -5,3 +5,12 @@
 // - Boolean Attributes: v-bind:class = {complete:true}
 // - Multiple Attributes
 // - Directives => v-if, v-for, v-bind, v-on, 
+
+
+// OPTIONS API
+// ——————
+// - Name
+// - Data => Reactive State => Vue creates a component instance
+// - Methods => Declare Methods
+// - Components => Declare New Components
+// - 

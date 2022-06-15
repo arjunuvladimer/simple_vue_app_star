@@ -19,6 +19,7 @@ export default{
             <li v-bind:key="todo.id" v-for="todo in todos">
                 <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',todo.id)" v-bind:todo="todo" />
                 
+                <!--<PEN color="blue" type="ballpen" />-->
                 <!--
                     <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',1)" v-bind:todo="todo" />
                     <Todo v-on:todos-delete-todo=" $emit('app-delete-todo',2)" v-bind:todo="todo" />
@@ -36,5 +37,6 @@ export default{
         </ul>
     </div>
 </template>
+
 <style>
 </style>
